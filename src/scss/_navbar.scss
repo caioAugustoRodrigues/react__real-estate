@@ -1,0 +1,51 @@
+header {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 1rem;
+    display: block;
+    
+    .navigation {
+
+        &__logo {
+            color: $text-color;
+            font-size: 1.75rem;
+            font-weight: weight(bolder);
+            
+            .fa-home {
+                color: $secondary-color;
+                font-size: 1.75rem;
+                margin-right: 0.25rem;
+            }
+        }
+
+        &__button {
+            position: absolute;
+            top: 1rem;
+            right: 1.75rem;
+            transform: translateY(-50%);
+            font-size: 1.75rem;
+            cursor: pointer;
+        }
+
+        &__links {
+            display: none;
+
+            &.open {
+                display: block;
+            }
+        }
+
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.active {
+    visibility: visible;
+}

@@ -1,0 +1,24 @@
+@import 'reset';
+@import 'config';
+@import 'hero';
+@import 'listings';
+@import 'filter';
+@import 'details';
+
+html {
+    overflow-x: hidden;
+
+    body {
+        overflow-x: hidden;
+        font-family: 'Source Sans Pro', sans-serif;
+
+        .container {
+            padding: 0 1rem;
+        }
+    };
+};
+
+
+
+
+

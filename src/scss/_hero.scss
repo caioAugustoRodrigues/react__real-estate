@@ -1,0 +1,32 @@
+.hero { 
+    background: url('../img/bg1.jpg') no-repeat center scroll;
+    background-color: rgb(63, 48, 48);
+    background-size: cover;
+    color: $primary-color;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+        h1 {
+            font-size: 3rem;
+            font-weight: weight(bolder);
+            text-transform: capitalize;
+            overflow: hidden;
+            border-bottom: 1px solid red;
+            align-self: center;
+        }
+    
+        p {
+            font-size: 1.5rem;
+            font-weight: weight(regular);
+            align-self: center;
+        }
+}
+      
+      .minihero {
+          height: 30vh;
+      }
+    
+    
