@@ -2,39 +2,42 @@
     background: url('../img/bg1.jpg') no-repeat center scroll;
     background-color: rgb(63, 48, 48);
     background-size: cover;
-    color: $primary-color;
     height: 80vh;
     width: 100%;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    @include link-format;
     
-        h1 {
-            font-size: 4rem;
-            font-weight: weight(bolder);
-            text-transform: capitalize;
-            overflow: hidden;
-            align-self: center;
-            border-bottom: 1px solid $primary-color;
-        }
+    h1 {
+        font-size: 4rem;
+        font-weight: weight(bolder);
+        text-transform: capitalize;
+        overflow: hidden;
+        align-self: center;
+        @include text--white;
+    }
 
-        h2 {
-            font-size: 2rem;
-            font-weight: weight(bold);
-            display: inline;
-            vertical-align: top;
+    .hero__logo {
+        overflow: hidden;
+        font-size: 3rem;
+        font-weight: weight(bold);
+        justify-self: flex-start;
+        border-bottom: 1px solid $primary-color;
+        @include text--white;
 
-            .fa-home {
-                color: $secondary-color;
-                margin-right: 5px;
-            }
+        .fa-home {
+            color: $secondary-color;
+            margin-right: 5px;
         }
-    
-        p {
-            font-size: 1.5rem;
-            font-weight: weight(regular);
-            align-self: center;
-        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: weight(regular);
+        align-self: center;
+        @include text--white;
+    }
 }
 
 @media only screen and (max-width: $mobile) {

@@ -16,6 +16,14 @@
         }
     };
 
+    &--goto {
+        background: $secondary-color;
+        border-radius: 2rem;
+        float: right;
+        font-size: 1.15rem;
+        font-weight: weight(medium);
+    }
+
     &:focus, &:hover, &:active {
         box-shadow: none;
         outline: none;

@@ -1,6 +1,6 @@
     .property-wrap {
-        background: $primary-color;
         margin: 1rem 0;
+        @include link-format;
     
             .card {
                 &__header {
@@ -12,6 +12,7 @@
                             font-size: 1.35rem;
                             font-weight: weight(bold);
                             overflow-y: hidden;
+                            color: $text-color;
                         }
             
                         &--2 {
@@ -20,21 +21,17 @@
                             font-size: 1.20rem;
                             border-bottom: 1px solid $text-color;
                         }
-        
-                        &--sub {
-                            color: $text-color;
-                            font-size: 0.85rem;
-                            margin-top: 1rem;
-                        }
                     }
                 }
-    
-    
-                .btn {
-                    @include flex-center;
-                    font-size: 1.15rem;
-                    font-weight: weight(medium);
-                }
                 
+                &__footer {
+                    padding: 1rem;
+                    &__sub {
+                        display: inline-block;
+                        color: $text-color;
+                        font-size: 1rem;
+                        margin-top: 0.75rem;
+                    }
+                }
             }
         }

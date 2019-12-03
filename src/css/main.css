@@ -11,7 +11,6 @@
   background: url("../img/bg1.jpg") no-repeat center scroll;
   background-color: #3f3030;
   background-size: cover;
-  color: #ffffff;
   height: 80vh;
   width: 100%;
   display: -webkit-box;
@@ -24,6 +23,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-decoration: none;
+}
+
+.hero:hover, .hero:active, .hero:link, .hero:focus {
+  text-decoration: none;
 }
 
 .hero h1 {
@@ -34,17 +38,19 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border-bottom: 1px solid #ffffff;
+  color: #f3f3f3;
 }
 
-.hero h2 {
-  font-size: 2rem;
+.hero .hero__logo {
+  overflow: hidden;
+  font-size: 3rem;
   font-weight: 700;
-  display: inline;
-  vertical-align: top;
+  justify-self: flex-start;
+  border-bottom: 1px solid #f3f3f3;
+  color: #f3f3f3;
 }
 
-.hero h2 .fa-home {
+.hero .hero__logo .fa-home {
   color: #48CDFF;
   margin-right: 5px;
 }
@@ -55,6 +61,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  color: #f3f3f3;
 }
 
 @media only screen and (max-width: 768px) {
@@ -70,8 +77,12 @@
 }
 
 .property-wrap {
-  background: #ffffff;
   margin: 1rem 0;
+  text-decoration: none;
+}
+
+.property-wrap:hover, .property-wrap:active, .property-wrap:link, .property-wrap:focus {
+  text-decoration: none;
 }
 
 .property-wrap .card__header {
@@ -83,6 +94,7 @@
   font-size: 1.35rem;
   font-weight: 700;
   overflow-y: hidden;
+  color: #3f3f3f;
 }
 
 .property-wrap .card__header__title--2 {
@@ -92,26 +104,15 @@
   border-bottom: 1px solid #3f3f3f;
 }
 
-.property-wrap .card__header__title--sub {
-  color: #3f3f3f;
-  font-size: 0.85rem;
-  margin-top: 1rem;
+.property-wrap .card__footer {
+  padding: 1rem;
 }
 
-.property-wrap .card .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-self: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  font-size: 1.15rem;
-  font-weight: 500;
+.property-wrap .card__footer__sub {
+  display: inline-block;
+  color: #3f3f3f;
+  font-size: 1rem;
+  margin-top: 0.75rem;
 }
 
 .filter {
@@ -179,8 +180,16 @@
 
 .btn--clear-filter:hover {
   background: #3f3f3f;
-  color: #ffffff;
+  color: #f3f3f3;
   border: 1px solid #3f3f3f;
+}
+
+.btn--goto {
+  background: #48CDFF;
+  border-radius: 2rem;
+  float: right;
+  font-size: 1.15rem;
+  font-weight: 500;
 }
 
 .btn:focus, .btn:hover, .btn:active {

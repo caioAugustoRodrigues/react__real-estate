@@ -1,5 +1,9 @@
 # Mockup Real Estate Website
  * Currently Hosted at: ;
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 5cd7b2ccc7428fac3f67efcb8b689c529ccfe06c
 
 ## Table of Contents:
  * Introduction;
@@ -23,3 +27,4 @@
  * Google Fonts(Source Sans Pro - by Adobe);
  * Bootstrap(4.4);
 
+ All images from https://unsplash.com/, data provided by Lorem Ipsum and Jon Preece. All rights to their respective owners.

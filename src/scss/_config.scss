@@ -1,4 +1,4 @@
-$primary-color: #ffffff;
+$primary-color: #f3f3f3;
 $secondary-color: #48CDFF;
 $text-color: #3f3f3f;
 $cash: #007c11;
@@ -26,3 +26,17 @@ $mobile: 768px;
     align-content: center;
 };
 
+@mixin link-format {
+    text-decoration: none;
+    &:hover, &:active, &:link, &:focus {
+        text-decoration: none;
+    }
+};
+
+@mixin text--white {
+    color: $primary-color;
+};
+
+@mixin text--dark {
+    color: $text-color;
+}
