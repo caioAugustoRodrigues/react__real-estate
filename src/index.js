@@ -7,7 +7,6 @@ import './css/main.css';
 import './js/main.js'
 import Home from './pages/home';
 import Details from './pages/details';
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(

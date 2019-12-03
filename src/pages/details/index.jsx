@@ -1,12 +1,9 @@
 import * as React from 'react'
-
 import {
     PropertyListingsProvider,
     PropertyListingsConsumer
 } from '../../context/PropertyListingsProvider'
-
 import PropertyDetails from '../../components/propertyDetails'
-
 import Hero from '../../components/hero'
 
 function Details ({ propertyId }){

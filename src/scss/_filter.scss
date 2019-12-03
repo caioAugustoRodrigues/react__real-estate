@@ -1,24 +1,57 @@
 .filter {
-    padding: 20px;
+    padding: 1rem 1rem;
     z-index: 1;
     overflow: hidden;
+    color: $text-color;
         
-        .filter__title {
+        &__title {
             font-weight: weight(bold);
-            font-size: 3rem;
+            font-size: 2.75rem;
             overflow: hidden;
             margin-left: -1rem;
         }
 
-        .form- {
-            &label {
-                @include flex-center;
-                font-weight: weight(regular);    
-            }
-
-            &group {
-                padding-right: 2rem;
-            }
+        &__head {
+            font-size: 1.425rem;
+            font-weight: weight(medium);
+            border-bottom: 1px solid $text-color;
+            margin: 1rem -1rem;
         }
 
+        .form {
+            &-label {
+                font-weight: weight(medium);
+                font-size: 1.235rem;    
+            }
+
+            &-control {
+                &:hover, &:active, &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+
+            &__type {
+                text-transform: capitalize;
+            }
+        }
     }
+
+@media only screen and (max-width: $mobile) {
+    .filter {
+        &__title {
+            font-size: 2.10rem;
+        }
+
+        &__head {
+            font-size: 1.05rem;
+            text-align: center;
+        }
+
+        .form {
+            &-label {
+                font-size: 1rem;
+            }
+        }
+    }
+}

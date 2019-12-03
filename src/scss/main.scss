@@ -4,16 +4,18 @@
 @import 'listings';
 @import 'filter';
 @import 'details';
+@import 'buttons';
+@import 'gallery';
 
 html {
     overflow-x: hidden;
 
     body {
         overflow-x: hidden;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;    
 
         .container {
-            padding: 0 1rem;
+            padding: 1rem;
         }
     };
 };

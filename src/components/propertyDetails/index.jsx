@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import KeyFeatures from './keyfeatures'
 import Map from './map'
-import Gallery from './gallery'
+import Carousel from '../gallery'
 
 function PropertyDetails({ listing }) {
     if (!listing) {
@@ -31,7 +31,7 @@ function PropertyDetails({ listing }) {
             </div>
             <div className="columns">
                 <div className="column col-6 col-xs-12">
-                    <Gallery id={id} title={title} />
+                    <Carousel id={id} title={title} />
                 </div>
                 <div className="column col-6 col-xs-12">
                     <KeyFeatures features={features} />

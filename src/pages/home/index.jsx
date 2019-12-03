@@ -12,7 +12,7 @@ function Home() {
   return (
     <React.Fragment>
       <Hero />
-     <div className="container shadow-sm">
+     <div className="container">
       <PropertyListingsProvider>
         <PropertyListingsConsumer>
           {function(value) {

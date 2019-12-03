@@ -10,12 +10,24 @@
     justify-content: center;
     
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: weight(bolder);
             text-transform: capitalize;
             overflow: hidden;
-            border-bottom: 1px solid red;
             align-self: center;
+            border-bottom: 1px solid $primary-color;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: weight(bold);
+            display: inline;
+            vertical-align: top;
+
+            .fa-home {
+                color: $secondary-color;
+                margin-right: 5px;
+            }
         }
     
         p {
@@ -24,9 +36,19 @@
             align-self: center;
         }
 }
-      
-      .minihero {
-          height: 30vh;
-      }
+
+@media only screen and (max-width: $mobile) {
+    .hero {
+        height: -15%;
+
+        h1 {
+            font-size: 2.75rem;
+        }
+
+        p {
+            font-size: 1.35rem;
+        }
+    }
+}
     
     
