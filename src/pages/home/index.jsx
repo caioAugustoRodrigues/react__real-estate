@@ -6,6 +6,7 @@ import {
 } from '../../context/PropertyListingsProvider'
 import Listing from '../../components/listings'
 import Filter from '../../components/filter'
+import Footer from '../../components/footer'
 
 
 function Home() {
@@ -41,7 +42,8 @@ function Home() {
           }
         </PropertyListingsConsumer>
       </PropertyListingsProvider>
-      </div> 
+      </div>
+      <Footer /> 
     </React.Fragment>
   )
 }

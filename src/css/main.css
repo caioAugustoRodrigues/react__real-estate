@@ -9,7 +9,7 @@
 
 .hero {
   background: url("../img/bg1.jpg") no-repeat center scroll;
-  background-color: #3f3030;
+  background-color: #3f3f3f;
   background-size: cover;
   height: 80vh;
   width: 100%;
@@ -23,11 +23,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-.hero:hover, .hero:active, .hero:link, .hero:focus {
-  text-decoration: none;
+.hero:link, .hero:visited, .hero:hover, .hero:active {
+  text-decoration: none !important;
 }
 
 .hero h1 {
@@ -41,20 +41,6 @@
   color: #f3f3f3;
 }
 
-.hero .hero__logo {
-  overflow: hidden;
-  font-size: 3rem;
-  font-weight: 700;
-  justify-self: flex-start;
-  border-bottom: 1px solid #f3f3f3;
-  color: #f3f3f3;
-}
-
-.hero .hero__logo .fa-home {
-  color: #48CDFF;
-  margin-right: 5px;
-}
-
 .hero p {
   font-size: 1.5rem;
   font-weight: 300;
@@ -64,25 +50,33 @@
   color: #f3f3f3;
 }
 
+.hero .estate {
+  color: #48CDFF;
+}
+
+.mini-hero .hero {
+  height: 40vh !important;
+}
+
 @media only screen and (max-width: 768px) {
-  .hero {
-    height: -15%;
+  .mini-hero .hero__logo {
+    font-size: 2rem;
   }
-  .hero h1 {
-    font-size: 2.75rem;
+  .mini-hero .hero h1 {
+    font-size: 2rem;
   }
-  .hero p {
-    font-size: 1.35rem;
+  .mini-hero .hero p {
+    font-size: 1.15rem;
   }
 }
 
 .property-wrap {
   margin: 1rem 0;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-.property-wrap:hover, .property-wrap:active, .property-wrap:link, .property-wrap:focus {
-  text-decoration: none;
+.property-wrap:link, .property-wrap:visited, .property-wrap:hover, .property-wrap:active {
+  text-decoration: none !important;
 }
 
 .property-wrap .card__header {
@@ -98,21 +92,18 @@
 }
 
 .property-wrap .card__header__title--2 {
+  padding-bottom: 1rem;
   color: green;
   font-weight: 700;
   font-size: 1.20rem;
   border-bottom: 1px solid #3f3f3f;
 }
 
-.property-wrap .card__footer {
-  padding: 1rem;
-}
-
 .property-wrap .card__footer__sub {
   display: inline-block;
   color: #3f3f3f;
-  font-size: 1rem;
-  margin-top: 0.75rem;
+  margin: 1rem;
+  margin-top: -5px;
 }
 
 .filter {
@@ -218,6 +209,83 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.real-logo {
+  overflow: hidden;
+  justify-self: flex-start;
+  border-bottom: 1px solid #f3f3f3;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f3f3f3;
+}
+
+.real-logo .estate {
+  color: #48CDFF;
+}
+
+.real-logo .fa-home {
+  color: #48CDFF;
+  margin-right: 5px;
+}
+
+.nav {
+  height: 6rem;
+}
+
+.nav +
+.Link {
+  text-decoration: none !important;
+}
+
+.nav +
+.Link:link, .nav +
+.Link:visited, .nav +
+.Link:hover, .nav +
+.Link:active {
+  text-decoration: none !important;
+}
+
+.nav +
+.Link .fa-chevron-left {
+  font-size: 1.5rem;
+  color: #3f3f3f;
+}
+
+.nav +
+.Link .real-logo {
+  color: #3f3f3f;
+}
+
+.footer {
+  background: #3f3f3f;
+  color: #f3f3f3;
+  font-size: 1.1rem;
+}
+
+.footer .container .footer__lists__left__item {
+  font-size: 1.1rem;
+  color: #f3f3f3;
+  text-decoration: none;
+}
+
+.footer .container .footer__lists__left__item:hover {
+  text-decoration: none;
+}
+
+.footer .container .footer__lists__right {
+  text-decoration: none !important;
+  color: #f3f3f3;
+  border: 1px solid red;
+}
+
+.footer .container .footer__lists__right:link, .footer .container .footer__lists__right:visited, .footer .container .footer__lists__right:hover, .footer .container .footer__lists__right:active {
+  text-decoration: none !important;
+}
+
+.footer .footer__bottom {
+  font-size: 0.9rem;
+  text-align: end;
 }
 
 html {

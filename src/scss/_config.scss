@@ -27,9 +27,9 @@ $mobile: 768px;
 };
 
 @mixin link-format {
-    text-decoration: none;
-    &:hover, &:active, &:link, &:focus {
-        text-decoration: none;
+    text-decoration: none !important;
+    &:link, &:visited, &:hover, &:active {
+        text-decoration: none !important;
     }
 };
 
@@ -37,6 +37,3 @@ $mobile: 768px;
     color: $primary-color;
 };
 
-@mixin text--dark {
-    color: $text-color;
-}

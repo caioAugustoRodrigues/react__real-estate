@@ -1,0 +1,17 @@
+.real-logo {
+    overflow: hidden;
+    justify-self: flex-start;
+    border-bottom: 1px solid $primary-color;
+    font-size: 3rem;
+    font-weight: weight(bold);
+    @include text--white;
+
+    .estate {
+        color: $secondary-color;
+    }
+
+    .fa-home {
+        color: $secondary-color;
+        margin-right: 5px;
+    }
+}

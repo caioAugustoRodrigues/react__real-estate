@@ -1,0 +1,16 @@
+.nav {
+    height: 6rem;+
+
+    .Link {
+        @include link-format;
+
+        .fa-chevron-left {
+            font-size: 1.5rem;
+            color: $text-color;
+        }
+    
+        .real-logo {
+            color: $text-color;
+        }
+    }
+}

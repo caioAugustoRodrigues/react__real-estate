@@ -16,6 +16,7 @@
                         }
             
                         &--2 {
+                            padding-bottom: 1rem;
                             color: green;
                             font-weight: weight(bold);
                             font-size: 1.20rem;
@@ -25,13 +26,12 @@
                 }
                 
                 &__footer {
-                    padding: 1rem;
                     &__sub {
                         display: inline-block;
                         color: $text-color;
-                        font-size: 1rem;
-                        margin-top: 0.75rem;
+                        margin: 1rem;
+                        margin-top: -5px;
                     }
                 }
             }
-        }
+    }

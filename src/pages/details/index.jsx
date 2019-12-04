@@ -4,13 +4,14 @@ import {
     PropertyListingsConsumer
 } from '../../context/PropertyListingsProvider'
 import PropertyDetails from '../../components/propertyDetails'
-import Hero from '../../components/hero'
+import NavBar from '../../components/navbar'
+import "../../css/main.css"
 
 function Details ({ propertyId }){
 
     return (
         <React.Fragment>
-            <Hero className="minihero"/>
+            <NavBar />
             <div className="container">
                 <PropertyListingsProvider>
                     <PropertyListingsConsumer>

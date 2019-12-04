@@ -1,0 +1,33 @@
+.footer {
+    background: $text-color;
+    color: $primary-color;
+    font-size: 1.1rem;
+    
+    .container {
+        .footer__lists {
+
+            &__left {
+                &__item {
+                    font-size: 1.1rem;
+                    color: $primary-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+    
+            &__right {
+                @include link-format;
+                color: $primary-color;
+                border: 1px solid red;
+            }
+        }    
+    }
+
+    .footer__bottom {
+        font-size: 0.9rem;
+        text-align: end;
+    }
+}
