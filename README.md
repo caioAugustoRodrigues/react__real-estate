@@ -10,7 +10,7 @@
     This is a mockup project of a Real Estate website, based on various real life examples, and, specially, Jon Preece's Tutorial to try and recreate some features from Real estate websites.
     This is also a project intended to improve my React knowledge, and to check my progress as a Developer in the future.
 
-## Technologies Used(as of October - 2019):
+## Technologies Used(as of December - 2019):
  * HTML5;
  * CSS3;
  * Javascript (ECMAScript 10 - 2019);
