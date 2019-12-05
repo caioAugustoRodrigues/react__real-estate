@@ -1,5 +1,4 @@
 import * as React from 'react'
-
 import KeyFeatures from './keyfeatures'
 import Map from './map'
 import Carousel from '../gallery'
@@ -26,9 +25,11 @@ function PropertyDetails({ listing }) {
                     {description}
                 </h3>
             </div>
+            
             <div className="details__gallery">
                 <Carousel id={id} />
             </div>
+
             <div className="details__features row">
                 <div className="details__features__features col-sm-6">
                     <KeyFeatures features={features} />
@@ -38,6 +39,7 @@ function PropertyDetails({ listing }) {
                     <Map address={address} />
                 </div>
             </div>
+
             <div className="details__details">
                 <p className="details__details__title">
                     Full Details

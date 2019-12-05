@@ -15,14 +15,14 @@
         text-transform: capitalize;
         overflow: hidden;
         align-self: center;
-        @include text--white;
+        color: $primary-color;
     }
 
     p {
         font-size: 1.5rem;
         font-weight: weight(regular);
         align-self: center;
-        @include text--white;
+        color: $primary-color;
     }
 
     .estate {
@@ -54,8 +54,6 @@
             }
         }
     }
-
-    
 }
     
     

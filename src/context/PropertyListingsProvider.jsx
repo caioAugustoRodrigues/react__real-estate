@@ -36,9 +36,7 @@ export class PropertyListingsProvider extends React.Component {
         if (propertyType) {
             result = result.filter(item => item.propertyType.toLowerCase().startsWith(propertyType))
         }
-
-    
-
+        
         return result
     }
 
@@ -83,6 +81,6 @@ export class PropertyListingsProvider extends React.Component {
             >
                 {children}
             </PropertyListingsContext.Provider>
-          );
+        );
     }
 }

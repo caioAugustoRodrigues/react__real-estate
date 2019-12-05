@@ -20,10 +20,12 @@ function Carousel({id}) {
                     <img className="d-block w-100" src={`/server/homes/${id}/bathroom.jpg`} alt="Fifth slide" />
                 </div>
             </div>
+
             <a className="carousel-control-prev" href={`#carouselControl${id}`} role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>
             </a>
+
             <a className="carousel-control-next" href={`#carouselControl${id}`} role="button" data-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="sr-only">Next</span>
