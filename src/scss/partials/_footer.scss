@@ -42,3 +42,11 @@
         text-align: center;
     }
 }
+
+@media only screen and (max-width: $mobile) {
+    .footer__lists {
+        &__right {
+            margin: 1rem;
+        }
+    }
+}

@@ -10,6 +10,7 @@ $weight: (
     'bolder': 900,
 );
 $mobile: 768px;
+$tablet: 1024px;
 
 @function weight($weightname){
     @return map-get($weight, $weightname );

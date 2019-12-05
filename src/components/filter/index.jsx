@@ -126,7 +126,7 @@ class Filter extends React.Component {
                             </div>
                             <button
                                 data-cy="clear button"
-                                className="mx-auto btn btn--clear-filter"
+                                className="mx-auto btn btn--clear-filter ripple"
                                 type="button"
                                 onClick={() => {
                                     this.setState(Object.assign({}, DefaultState))
