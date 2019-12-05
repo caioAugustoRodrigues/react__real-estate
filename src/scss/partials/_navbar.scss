@@ -1,16 +1,33 @@
 .nav {
-    height: 6rem;+
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    justify-content: space-between;
+    height: 3rem; 
 
     .Link {
+        margin: 1rem;
+        align-self: center;
+        overflow: hidden;
         @include link-format;
 
         .fa-chevron-left {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             color: $text-color;
+        }
+
+        .fa-times {
+            justify-self: flex-end;
+            font-size: 1.5rem;
+            color: $text-color;  
         }
     
         .real-logo {
+            display: inline;
+            margin-left: 0.5rem;
+            border: none;
             color: $text-color;
+            font-size: 1.75rem;      
         }
     }
 }

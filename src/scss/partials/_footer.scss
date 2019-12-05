@@ -2,32 +2,43 @@
     background: $text-color;
     color: $primary-color;
     font-size: 1.1rem;
+    a {
+        @include link-format
+    }
     
     .container {
         .footer__lists {
 
             &__left {
                 &__item {
-                    font-size: 1.1rem;
-                    color: $primary-color;
-                    text-decoration: none;
-
-                    &:hover {
+                    a {
+                        font-size: 1.1rem;
+                        color: $primary-color;
                         text-decoration: none;
                     }
                 }
             }
     
             &__right {
-                @include link-format;
-                color: $primary-color;
-                border: 1px solid red;
+                display: flex;
+                justify-content: flex-end;
+
+                &__item {
+                    color: $secondary-color;
+                    padding-left: 1rem;
+                    align-self: center;
+                    @include transition-ease;
+
+                    &:hover {
+                        color: $secondary-color--hover;
+                    }
+                }
             }
         }    
     }
 
     .footer__bottom {
         font-size: 0.9rem;
-        text-align: end;
+        text-align: center;
     }
 }

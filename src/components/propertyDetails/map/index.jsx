@@ -10,7 +10,7 @@ function Map({ address }) {
           title={address}
           src={search}
           width="100%"
-          height="500"
+          height="100%"
           id="gmap_canvas"
           frameBorder="0"
           scrolling="no"

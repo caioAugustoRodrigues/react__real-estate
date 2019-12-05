@@ -5,6 +5,7 @@ import {
 } from '../../context/PropertyListingsProvider'
 import PropertyDetails from '../../components/propertyDetails'
 import NavBar from '../../components/navbar'
+import Footer from '../../components/footer'
 import "../../css/main.css"
 
 function Details ({ propertyId }){
@@ -21,6 +22,7 @@ function Details ({ propertyId }){
                     </PropertyListingsConsumer>
                 </PropertyListingsProvider>
             </div>
+            <Footer />
         </React.Fragment>
     )
 }

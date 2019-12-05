@@ -5,16 +5,16 @@ class KeyFeatures extends React.Component {
         const { features } = this.props
 
         return ( 
-            <>
+            <React.Fragment>
             <p className="keyfeatures-title">Key Features</p>
-            <ul className='keyfeatures'>
+            <ul className='keyfeatures-content'>
               {features.map(feature => (
                 <li key={feature}>
-                  <small>{feature}</small>
+                  <h6>- {feature}</h6>
                 </li>
               ))}
             </ul>
-            </>
+            </React.Fragment>
          );
     }
 }

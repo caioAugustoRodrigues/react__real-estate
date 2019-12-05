@@ -1,5 +1,6 @@
 $primary-color: #f3f3f3;
 $secondary-color: #48CDFF;
+$secondary-color--hover: rgb(58, 156, 192);
 $text-color: #3f3f3f;
 $cash: #007c11;
 $weight: ( 
@@ -15,7 +16,7 @@ $mobile: 768px;
 };
 
 @mixin transition-ease {
-    transition: all 500ms ease-in-out;
+    transition: all 300ms ease-in-out;
 };
 
 @mixin flex-center {

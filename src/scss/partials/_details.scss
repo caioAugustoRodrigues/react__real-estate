@@ -1,0 +1,99 @@
+.details {
+    background: $primary-color;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: $text-color;
+
+    &__title {
+        display: flex;
+        flex-wrap: wrap;
+
+        h2 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: weight(bold);
+            overflow: hidden;
+        }
+
+        h5 {
+            margin-left: auto;
+            font-size: 1.5rem;
+            overflow: hidden;
+            small {
+                color: $text-color;
+                font-weight: weight(medium);
+                margin-right: 0.8rem;
+            }
+
+            .price {
+                color: $cash;
+                font-weight: weight(bold);
+            }
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            font-weight: weight(regular);
+            overflow: hidden;
+            display: inline;
+        }
+    }
+
+    &__gallery {
+        margin: 1rem -1rem;
+    }
+
+    &__features {
+        &__features {
+            
+            .keyfeatures-title {
+                font-size: 1.15rem;
+                font-weight: weight(medium);
+            }
+
+            .keyfeatures-content {
+                list-style-type: disc;
+                li {
+                    h6 {
+                        font-size: 1rem
+                    }
+                }
+            }
+        }
+
+        &__map {
+            align-self: flex-start;
+
+            &__title {
+                font-size: 1.15rem;
+                font-weight: weight(medium);
+            }
+        }
+    }
+
+    &__details {
+        &__title {
+            font-size: 1.15rem;
+            font-weight: weight(medium);
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .details {
+        &__title {
+            display: inline;
+            h2 {
+                margin-bottom: -0.25rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        &__gallery {
+            margin: -3rem 0;
+        }
+    }
+}
