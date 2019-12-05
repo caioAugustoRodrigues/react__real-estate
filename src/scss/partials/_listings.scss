@@ -1,37 +1,41 @@
-.property-wrap {
-    margin: 1rem 0;
-    @include link-format;
+.listings {
+    background: white;
 
-    .card {
-        &__header {
-            margin: 1rem;
-
-            &__title {
-                &--1 {
-                    text-transform: uppercase;
-                    font-size: 1.35rem;
-                    font-weight: weight(bold);
-                    overflow-y: hidden;
-                    color: $text-color;
-                }
+    .property-wrap {
+        margin: 1rem 0;
+        @include link-format;
     
-                &--2 {
-                    padding-bottom: 1rem;
-                    color: $cash;
-                    font-weight: weight(bold);
-                    font-size: 1.20rem;
-                    border-bottom: 1px solid $text-color;
+        .card {
+            &__header {
+                margin: 1rem;
+    
+                &__title {
+                    &--1 {
+                        text-transform: uppercase;
+                        font-size: 1.35rem;
+                        font-weight: weight(bold);
+                        overflow-y: hidden;
+                        color: $text-color;
+                    }
+        
+                    &--2 {
+                        padding-bottom: 1rem;
+                        color: $cash;
+                        font-weight: weight(bold);
+                        font-size: 1.20rem;
+                        border-bottom: 1px solid $text-color;
+                    }
+                }
+            }
+            
+            &__footer {
+                &__sub {
+                    display: inline-block;
+                    color: $text-color;
+                    margin: 1rem;
+                    margin-top: -5px;
                 }
             }
         }
-        
-        &__footer {
-            &__sub {
-                display: inline-block;
-                color: $text-color;
-                margin: 1rem;
-                margin-top: -5px;
-            }
-        }
-    }
+    }    
 }

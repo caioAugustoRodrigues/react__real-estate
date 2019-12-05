@@ -21,20 +21,23 @@ function Home() {
               
               return (
                 <React.Fragment>
-                  <Filter
-                    updateFilter ={updateFilter}
-                    count={propertyListings.length}
-                    postcodes={allListings
-                    .map(listing => listing.postcode.split(' ')[0])
-                    .filter((item, i, arr) => arr.indexOf(item) ===i)}
-                    propType={allListings
-                    .map(listing => listing.propertyType.split(' ')[0])
-                    .filter((item, i, realType) => realType.indexOf(item) ===i)}
-                  />
-                  <div className="row">
-                    {propertyListings.map(listing => (
-                      <Listing listing={listing} key={listing.address}/>
-                    ))}
+                  <div className="container listings">
+                    <Filter
+                      updateFilter ={updateFilter}
+                      count={propertyListings.length}
+                      postcodes={allListings
+                      .map(listing => listing.postcode.split(' ')[0])
+                      .filter((item, i, arr) => arr.indexOf(item) ===i)}
+                      propType={allListings
+                      .map(listing => listing.propertyType.split(' ')[0])
+                      .filter((item, i, realType) => realType.indexOf(item) ===i)}
+                    />
+     
+                    <div className="row">
+                      {propertyListings.map(listing => (
+                        <Listing listing={listing} key={listing.address}/>
+                      ))}
+                    </div>
                   </div>
                 </React.Fragment>
               )

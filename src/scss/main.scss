@@ -1,13 +1,15 @@
 @import 'reset';
 @import 'config';
 @import 'partials';
+@import 'hero';
 
 html {
     overflow-x: hidden;
 
     body {
         overflow-x: hidden;
-        font-family: 'Source Sans Pro', sans-serif;    
+        font-family: 'Source Sans Pro', sans-serif;  
+        background: $primary-color;  
 
         .container {
             padding: 1rem;
