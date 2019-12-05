@@ -32,7 +32,7 @@
                     align-self: center;
                     @include transition-ease;
 
-                    &:hover {
+                    &:active {
                         color: $secondary-color--hover;
                     }
                 }
