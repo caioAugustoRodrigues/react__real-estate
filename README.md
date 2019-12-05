@@ -1,9 +1,5 @@
 # Mockup Real Estate Website
  * Currently Hosted at: https://react-real-estate-9d2d7.firebaseapp.com/;
-<<<<<<< HEAD
-=======
- 
->>>>>>> 5cd7b2ccc7428fac3f67efcb8b689c529ccfe06c
 
 ## Table of Contents:
  * Introduction;
