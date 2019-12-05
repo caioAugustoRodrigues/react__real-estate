@@ -40,7 +40,7 @@ class Filter extends React.Component {
             onChange={() => setTimeout(() => updateFilter(this.state), 0)}
             >
                 <h2 data-cy="property-count" className="filter__title">
-                {`${count} private ${getPropertiesDisplayText(count)} for sale`}
+                {`${count} private ${getPropertiesDisplayText(count)} for sale in your region`}
                 </h2>
 
                 <p className="filter__head">
