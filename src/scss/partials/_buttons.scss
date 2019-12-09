@@ -1,7 +1,7 @@
 .btn {
     @include transition-ease;
 
-    &--clear-filter {
+    &__clear-filter {
         color: $text-color;
         background: none;
         border: 1px solid $text-color;
@@ -16,6 +16,22 @@
         }
     }
 
+    &__submit {
+        color: $text-color;
+        background: none;
+        border: 1px solid $secondary-color;
+        border-radius: 2rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+
+        &:hover {
+            color: white;
+            background: $secondary-color;
+            border: 1px solid $secondary-color;
+        }
+    }
+
     &:focus, &:hover, &:active {
         box-shadow: none;
         outline: none;
@@ -24,7 +40,7 @@
 
 @media only screen and (max-width: $mobile) {
     .btn {
-        &--clear-filter {
+        &__clear-filter {
             color: $primary-color;
             background: $text-color;
             position: relative;

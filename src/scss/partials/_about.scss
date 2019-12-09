@@ -1,0 +1,21 @@
+.about {
+    color: $text-color;
+    background: white;
+    display: flex;
+    height: 50vh;
+    
+    .content {
+        h1 {
+            font-size: 1.1rem;
+            font-weight: weight(bold);
+            overflow: hidden;
+            margin-bottom: -.1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: weight(regular);
+        }
+    }
+}
+

@@ -1,0 +1,19 @@
+.banner {
+    background: url('../img/bg1.jpg') no-repeat center scroll;
+    background-color: $text-color;
+    background-size: cover;
+    overflow: hidden;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+
+
+    h1 {
+        overflow: hidden;
+        font-size: 3rem;
+        font-weight: weight(bold);
+    }
+}

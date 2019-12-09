@@ -2,18 +2,18 @@
     background: $text-color;
     color: $primary-color;
     font-size: 1.1rem;
+    position: relative;
+    bottom: 0rem;
+    width: 100%;
+
     a {
         @include link-format
     }
     
     .container {
         .footer__lists {
-
             &__left {
-                display: flex;
-                flex-direction: column;
                 &__item {
-                    align-self: center;
                     a {
                         font-size: 1.1rem;
                         color: $primary-color;
@@ -21,18 +21,18 @@
                     }
                 }
             }
-    
+
             &__right {
                 display: flex;
-                justify-content: center;
+                align-items: center;
+                justify-content: flex-end;
 
                 &__item {
                     color: $secondary-color;
                     padding-left: 1rem;
-                    align-self: center;
                     @include transition-ease;
-
-                    &:active {
+    
+                    &:active, &:hover {
                         color: $secondary-color--hover;
                     }
                 }
@@ -42,15 +42,54 @@
 
     .footer__bottom {
         margin-top: 1rem;
-        font-size: 0.9rem;
         text-align: center;
+
+        &__copy {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            overflow: hidden
+        }
+
+        p {
+            font-size: 0.8rem;
+            margin-bottom: -1rem;
+        }
     }
 }
 
 @media only screen and (max-width: $mobile) {
     .footer__lists {
+        &__left {
+            text-align: center;
+            margin: 1rem, auto;
+        }
+
         &__right {
+            justify-content: center;
             font-size: 1rem;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    .footer__lists {
+        &__left {
+            justify-content: center;
+            margin: 1rem, auto;
+        }
+
+        &__right {
+            justify-content: center !important;
+            font-size: 1rem;
+
+            &__item {
+                &:hover, &:active, &:link, &:focus {
+                    color: $secondary-color !important;
+                }
+            }
         }
     }
 }
