@@ -11,8 +11,8 @@ function PropertyDetails({ listing }) {
     const { title, address, description, price, features, details, id } = listing
 
     return (
-        <div className="details">
-             <div className="details__title">
+        <div className="details row">
+             <div className="details__title col-md-12">
                 <h2>{title}</h2>
                 <h5>
                     <small>Price from:</small>
@@ -26,15 +26,15 @@ function PropertyDetails({ listing }) {
                 </h3>
             </div>
             
-            <div className="details__gallery">
+            <div className="details__gallery col-md-12">
                 <Carousel id={id} />
             </div>
 
             <div className="details__features row">
-                <div className="details__features__features col-sm-6">
+                <div className="details__features__features col-md-6">
                     <KeyFeatures features={features} />
                 </div>
-                <div className="details__features__map col-sm-6">
+                <div className="details__features__map col-md-6">
                 <p className="details__features__map__title">Map</p>
                     <Map address={address} />
                 </div>
