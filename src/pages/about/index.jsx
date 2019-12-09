@@ -8,7 +8,7 @@ function About() {
         <React.Fragment>
             <NavBar />
             <Banner />
-            <div className="container about">
+            <div className="container about shadow-sm">
                 <div className="content">
                     <h1>Our Motto</h1>
                     <p>"Premium properties for a premium price"

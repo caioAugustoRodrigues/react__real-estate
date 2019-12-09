@@ -3,11 +3,28 @@
     z-index: 1000;
     overflow: hidden;
     margin: 1rem auto;
+    padding: rem;
 
-    .contact {
+    h1 {
+        font-size: 2.1rem;
+        font-weight: weight(bold);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    h3 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: weight(bold);
+        overflow: hidden;
+    }
+
+    .contact { //start of Contact Form Component
+        padding: 1rem;
+
         &__heading {
             overflow: hidden;
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             border-bottom: 1px solid $primary-color;
             font-weight: weight(medium);
             text-align: center;

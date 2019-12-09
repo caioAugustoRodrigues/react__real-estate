@@ -47,7 +47,7 @@ class ContactForm extends Component {
     render() { 
         return ( 
             <div className="contact">
-                <h1 className="contact__heading">Contact Us</h1>
+                <h1 className="contact__heading">Please note: All fields are Required.</h1>
                 <form className="contact__form" onSubmit={this.handleSubmit.bind(this)}>
                     <formgroup controlId="formBasicEmail">
                         <label className="contact__form__label">Email Adress</label>
@@ -58,6 +58,7 @@ class ContactForm extends Component {
                         className="form-control"
                         onChange={this.handleChange.bind(this, 'email')}
                         placeholder="a_1@b.com"
+                        required
                     />
                     </formgroup>
 
@@ -70,6 +71,7 @@ class ContactForm extends Component {
                             className="form-control"
                             onChange={this.handleChange.bind(this, 'name')}
                             placeholder="Name"
+                            required
                         />
                     </formgroup>
 
@@ -94,6 +96,7 @@ class ContactForm extends Component {
                             className="form-control"
                             onChange={this.handleChange.bind(this, 'message')}
                             placeholder="Message"
+                            required
                         />
                     </formgroup>
 
