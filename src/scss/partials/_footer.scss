@@ -2,9 +2,10 @@
     background: $text-color;
     color: $primary-color;
     font-size: 1.1rem;
-    position: absolute;
+    position: relative;
     bottom: 0rem;
     width: 100%;
+    height: fit-content;
 
     a {
         @include link-format

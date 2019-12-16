@@ -13,8 +13,13 @@ html {
         font-family: 'Source Sans Pro', sans-serif;  
         background: $primary-color;  
 
-        .container {
-            padding: 1rem;
+        #root {
+            position: relative;
+            min-height: 100vh;
+
+            .container {
+                padding: 1rem;
+            }
         }
     }
 }
