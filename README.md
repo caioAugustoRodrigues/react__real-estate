@@ -24,5 +24,6 @@
  * Font Awesome(v5.11.2);
  * Google Fonts(Source Sans Pro - by Adobe);
  * Bootstrap(4.4);
+ * EmailJS();
 
  All images from https://unsplash.com/, data provided by Lorem Ipsum and Jon Preece. All rights to their respective owners.
