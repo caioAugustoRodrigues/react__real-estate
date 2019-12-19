@@ -1,3 +1,11 @@
 node_modules
 .cache
 dist
+.firebase
+.babelrc
+.firebaserc
+database.rules.json
+firebase.json
+.package-lock.json
+work.code-workspace
+.gitignore
