@@ -54,3 +54,11 @@
         }
     }
 }
+
+@media only screen and (min-width: $tablet) {
+    .contact-container {
+        align-items: center;
+        padding: 2rem;
+        height: 65vh;
+    }
+}

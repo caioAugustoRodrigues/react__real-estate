@@ -8,11 +8,6 @@ function Footer() {
                 <div className="footer__lists row">
                     <ul className="footer__lists__left col-sm-6">
                         <li className="footer__lists__left__item">
-                            <Link to="/about/">
-                                About Us
-                            </Link>
-                        </li>
-                        <li className="footer__lists__left__item">
                             <Link to="/contactus/">
                                 Contact Us
                             </Link>

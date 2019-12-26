@@ -7,7 +7,6 @@ import './css/main.css'
 import './js/main.js'
 import Home from './pages/home'
 import Details from './pages/details'
-import About from './pages/about'
 import ContactUs from './pages/contact'
 
 const rootElement = document.getElementById('root');
@@ -15,7 +14,6 @@ ReactDOM.render(
     <Router>
         <Home default />
         <Details path="/details/:propertyId" />
-        <About path="/about/" />
         <ContactUs path="/contactus/" />
     </Router>,
     rootElement

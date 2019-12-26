@@ -2,11 +2,13 @@ import * as React from 'react'
 import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
 import ContactForm from '../../components/contact'
+import Banner from '../../components/banner'
 
 function ContactUs() {
     return (
         <React.Fragment>
             <Navbar />
+            <Banner />
             <div className="container contact-container shadow-sm">
                 <div className="row">
                     <div className="col-md-6">
