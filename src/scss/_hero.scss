@@ -1,6 +1,11 @@
 .hero { 
-    background: url('../img/bg1.jpg') no-repeat center scroll;
-    background-color: $text-color;
+    background: 
+        linear-gradient(
+        to right,
+        rgba($text-color, 0.9),
+        rgba($text-color, 0.3),
+            ),
+        url('../img/bg1.jpg') no-repeat center top scroll;
     background-size: cover;
     height: 80vh;
     width: 100%;
